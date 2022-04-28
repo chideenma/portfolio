@@ -24,7 +24,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-    padding: 20px o;
+    padding: 20px 0;
 }
 
 .navitems {
@@ -42,6 +42,40 @@ body {
     font-weight: 500;
     transition: all ease-in-out 1s;
 }
+
+.content {
+    padding: 0 20px;
+}
+
+.banner {
+    display: block;
+    padding-top: 100px;
+}
+
+.banner > h1 {
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.desktop-paragraph {
+    display: none;
+}
+
+.mobile-paragraph {
+    padding-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+}
+.portfolio > img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
 @media (min-width: 768px) {
     .navbar {
             width: 100vw;
@@ -58,7 +92,36 @@ body {
             padding: 20px 20px;
         }
         .logo{
-            padding: 20px 20px;
+            padding: 20px 0;
+        }
+
+        .content {
+            padding: 0 48px;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 180px;
+        }
+
+        .banner > h1 {
+            font-size: 40px;
+        }
+
+        .desktop-paragraph {
+            padding-top: 0;
+            display: block;
+        }
+        .mobile-paragraph {
+            display: none;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            gap: 48px;
         }
 }
 
