@@ -24,7 +24,7 @@ body {
     text-transform: uppercase;
     text-decoration: none;
     color: #000000;
-    padding: 20px o;
+    padding: 20px 0;
 }
 
 .navitems {
@@ -42,6 +42,106 @@ body {
     font-weight: 500;
     transition: all ease-in-out 1s;
 }
+
+.content {
+    padding: 0 20px;
+}
+
+.banner {
+    display: block;
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+.banner > h1 {
+    font-weight: 400;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.desktop-paragraph {
+    display: none;
+}
+
+.mobile-paragraph {
+    padding-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    gap: 20px;
+}
+.portfolio > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.portfolio-content > a {
+    display: block;
+    font-size: 24px;
+    line-height: 29.05px;
+    text-transform: uppercase;
+    color: #000000;
+    padding-top: 42px;
+}
+.portfolio-content > span {
+    display: block;
+    padding-top: 15px;
+    font-size: 24px;
+    line-height: 29.05px;
+}
+.image-wrapper {
+    position: relative;
+}
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.overlay > h1 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.57px;
+    color: #fff;
+}
+.image-wrapper > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.footer {
+    padding: 0 20px;
+}
+.footer > p {
+    padding-top: 200px;
+    text-align: center;
+}
+.footer > h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 43.57px;
+    text-transform: capitalize;
+    padding-top: 30px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 200px;
+    padding-bottom: 50px;
+}
+
 @media (min-width: 768px) {
     .navbar {
             width: 100vw;
@@ -58,7 +158,51 @@ body {
             padding: 20px 20px;
         }
         .logo{
-            padding: 20px 20px;
+            padding: 20px 0;
+        }
+
+        .content {
+            padding: 0 48px;
+        }
+
+        .banner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 180px;
+        }
+
+        .banner > h1 {
+            font-size: 40px;
+        }
+
+        .desktop-paragraph {
+            padding-top: 0;
+            display: block;
+        }
+        .mobile-paragraph {
+            display: none;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: 100%;
+            gap: 48px;
+        }
+
+        .footer > h1 {
+            font-size: 36px;
+        }
+
+        .footer {
+            padding: 0 48px;
+        }
+        .portfolio > img {
+            height: 600px;
+        }
+
+        .image-wrapper > img {
+            height: 600px;
         }
 }
 
